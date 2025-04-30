@@ -1,0 +1,39 @@
+﻿	
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kavya Animation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fce4ec;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #text {
+      font-size: 48px;
+      color: #e91e63;
+      border-right: 2px solid #e91e63;
+
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 2.5s steps(5) forwards, blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 240px; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+  </style>
+</head>
+<body>
+  <div id="text">Kavya</div>
+</body>
+</html>
